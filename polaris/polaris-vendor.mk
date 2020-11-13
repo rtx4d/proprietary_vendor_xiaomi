@@ -340,7 +340,5 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     CACertService \
-    HotwordEnrollmentOKGoogleWCD9340 \
-    HotwordEnrollmentXGoogleWCD9340 \
     android.hardware.gnss@2.0-service-qti \
     vendor.qti.gnss@3.0-service
