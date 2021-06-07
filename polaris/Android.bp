@@ -1,5 +1,5 @@
 /**
- * Copyright (C) 2019-2020 Paranoid Android
+ * Copyright (C) 2019-2021 Paranoid Android
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,17 +20,10 @@ soong_namespace {
 }
 
 prebuilt_etc_xml {
-	name: "android.hardware.gnss@2.1-service-qti",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
 	name: "vendor.qti.gnss@4.0-service",
 	owner: "xiaomi",
 	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
+	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
